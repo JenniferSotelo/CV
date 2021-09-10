@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gloomy Place</title>
+    <style>
+      body {
+        background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+        font-family: ink free;
+        color: #f7e2ba;
+      }
+      h1 {
+        color: #f7e2ba;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 40px;
+        margin: 50px;
+      }
+      h2 {
+        line-height: 150%;
+      }
+      img {
+        display: block;
+        margin: 30px auto;
+        border-radius: 30px;
+        width: 50%;
+        box-shadow: 5px 5px 5px #97cba9;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        font-size: 20px;
+        padding-inline-start: 0px;
+      }
+      button {
+        font-size: 30px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        font-family: ink free;
+        background: #f7e2ba;
+      }
+      .mid {
+        width: 300px;
+        height: 300px;
+        display: inline;
+        margin: 30px 20px 20px;
+      }
+      .wiki {
+        color: #72c797;
+      }
+      .gloom {
+        font-size: 35px;
+        margin: 5px 20px 30px;
+      }
+      .home {
+        margin: 10px auto;
+      }
+      .tail {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Eeyore's favorite place is his house of sticks in the southeast corner of
+      the Hundred Acre Woods!
+    </h1>
+    <ul>
+      <li>
+        <img
+          class="home"
+          src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/837/original/Eeyore2.jpg?1626128678"
+          alt="gloomy place"
+        />
+        <div class="gloom">Eeyore's Gloomy Place</div>
+      </li>
+      <li>
+        <img
+          class="mid"
+          src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/836/original/eeyore3.jpg?1626128599"
+          alt="eeyore color"
+        />
+
+        <img
+          class="mid"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/835/original/Eeyore1.jpg?1626128559"
+          alt="Eeyore"
+        />
+        <br />
+        <h2>
+          Eeyore is a character in the Winnie-the-Pooh books by A. A. Milne. He
+          is generally characterized as a pessimistic, gloomy, depressed,
+          anhedonic, old grey stuffed donkey. Eeyore let's you know, you dont
+          always have to feel happy. Even though life is mostly sunny, there are
+          some moments that can be less than perfect. It’s perfectly okay if you
+          don’t always take those in stride.
+          <br />
+          Even if Eeyore has a gloomy disposition thats what makes him my
+          favorite!
+        </h2>
+      </li>
+      <li>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/889/original/there_goes_the_tail.png?1626207014"
+          alt="long"
+        />
+        <span class="tail">
+          <em> "Its not much of a tail, but I'm attached to it" </em> -
+          <strong>Eeyore</strong></span
+        >
+        <a
+          class="wiki"
+          href="https://en.wikipedia.org/wiki/Eeyore"
+          target="_blank"
+        >
+          Learn More about Eeyore!</a
+        >
+        <hr />
+        <button>Shop Eeyore!</button>
+      </li>
+    </ul>
+    <script>
+      let place = prompt("Where is your favorite place?");
+      function buyNow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        if (email.length + name.length) {
+          alert(
+            "Thank you " +
+              name +
+              " we will get back to you about future Eeyore products!"
+          );
+        } else {
+          alert(
+            "We need a little more information for you to shop 😅 Try Again"
+          );
+        }
+      }
+      let shopbutton = document.querySelector("button");
+      shopbutton.addEventListener("click", buyNow);
+    </script>
+  </body>
+</html>
